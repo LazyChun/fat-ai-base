@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  min-width: 0;
+}
+
+.label {
+  font-size: 12px;
+  opacity: 0.85;
+  flex: 0 0 auto;
+}
+
+.value {
+  display: inline-flex;
+  align-items: center;
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 22px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 12px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.valueEmpty {
+  opacity: 0.75;
+  background: rgba(0, 0, 0, 0.02);
+  border-style: dashed;
+}

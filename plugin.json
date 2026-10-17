@@ -1,0 +1,26 @@
+{
+  "id": "fat-ai-base",
+  "name": "Fat AI Base",
+  "version": "1.0.0",
+  "description": "AI 基础能力包：知识库向量存储（chromadb）、OCR（paddleocr）、深度学习运行时（paddlepaddle）、图像处理（opencv）。宿主的知识库、OCR、部分流程节点依赖本插件，按需安装。",
+  "entry": "remoteEntry.js",
+  "mfName": "FatAiBase",
+  "container": "FatAiBase",
+  "exposed": "./plugin",
+  "contributions": {
+    "activityBar": false,
+    "primarySidebar": false,
+    "panel": false,
+    "footer": false,
+    "routes": false,
+    "widgetTypes": false
+  },
+  "permissions": [],
+  "backend": {
+    "enabled": true,
+    "entry": "backend/main.py",
+    "requirements": "backend/requirements.txt",
+    "depsStrategy": "install",
+    "depsTimeoutSeconds": 7200
+  }
+}
