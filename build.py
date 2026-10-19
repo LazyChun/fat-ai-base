@@ -25,7 +25,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # 打包时排除的目录/文件（缓存、venv、已安装依赖）
 EXCLUDE_DIRS = {"__pycache__", "vendor", ".venv", "node_modules", ".git", "build", "dist"}
-EXCLUDE_FILES = {".deps_installed"}
+EXCLUDE_FILES = {".deps_installed", ".deps_install_error"}
 
 
 def _add_backend_files(zf: zipfile.ZipFile) -> int:
